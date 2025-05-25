@@ -1,0 +1,30 @@
+\contentsline {section}{\numberline {1}Introduction générale}{1}{section.1}%
+\contentsline {section}{\numberline {2}Étude de l’existant}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Présentation de l’entreprise Gulf Insurance Group (GIG) algeria}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Analyse de la situation actuelle}{2}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Situation Actuelle}{2}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Inconvénients de la situation actuelle}{3}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Étude de solutions existantes}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Résumé de la solution envisagée}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}La Conception}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fonctionnalités principales}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Définition UML}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Définition d'un acteur}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Définition du diagramme de cas d’utilisation}{6}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Les diagrammes de cas d'utilisation}{7}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Définition du diagramme de séquence}{10}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Les diagrammes de séquence}{10}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Définition du diagramme de classe}{11}{subsubsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.3}Définition de design}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Le design de la plateforme}{12}{subsubsection.3.3.1}%
+\contentsline {section}{\numberline {4}La réalisation pratique}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Méthodologie adoptée}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Les outils utilisés dans la conception}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Le développement}{13}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Architecture adoptée}{14}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Interface utilisateur}{16}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Conclusion}{23}{section.5}%
+\contentsline {section}{\numberline {6}Annexe}{25}{section.6}%
+\contentsline {section}{\numberline {A}Le diagramme d'authentification}{25}{appendix.A}%
+\contentsline {section}{\numberline {B}Le design de la plateforme TAKWINI sur Figma}{26}{appendix.B}%
+\contentsline {section}{\numberline {C}Définition de l'architecture client-serveur }{27}{appendix.C}%
