@@ -661,8 +661,49 @@ L’administrateur peut également consulter la liste des comptes créés, modif
 \end{figure}
 
 
+\vspace{0,3cm}
+\textit{Nous procédons ensuite à la conversion en modèle relationnel.}
+\vspace{0.9cm}
+
+\noindent \textit{Règles pour la transformation d’un diagramme de classes UML en modèle relationnel:}
+
+\begin{itemize}
+  \item \textbf{Règle 1} : Chaque classe devient une table et tous les attributs de la classe deviennent des colonnes, avec un identifiant unique clé primaire (PK).
+  \item \textbf{Règle 2} : Chaque association de type 1:N se traduit par une clé étrangère (FK) dans la table du côté "N", pointant vers la clé primaire du côté "1".
+  \item \textbf{Règle 3} : Chaque association N:M est modélisée par une table d’association contenant les clés primaires (PK) des deux entités comme clés étrangères (FK) et clé primaire (PK) composite.
+  \item \textbf{Règle 4} : Chaque association 1:1 ou celles avec des attributs deviennent une table séparée incluant les clés étrangères (FK) et les attributs de l’association.
+\end{itemize}
 
 
+\vspace{0,3cm}
+
+\subsection*{Modèle Relationnel}
+\noindent \textit{Nous obtenons alors le schéma suivant :}
+
+\begin{itemize}
+  \item[] \textbf{User}(\underline{idUser}, Nom, Prenom, Email, Password, Role, Departement, Thème, Langue, Tel)
+  \item[] \textbf{Prof}(\underline{idProf}, idUser*)
+  \item[] \textbf{Admin}(\underline{idAdmin}, idUser*)
+  \item[] \textbf{Employe}(\underline{idEmploye}, idUser*)
+  \item[] \textbf{Formation}(\underline{idFormation}, Titre, Description, Departement, Date\_creation, idProf*)
+  \item[] \textbf{Cours}(\underline{idCours}, Lien\_Quiz, Lien\_externe, idFormation*, idMateriel*)
+  \item[] \textbf{Materielc}(\underline{idMateriel})
+  \item[] \textbf{Video}(\underline{idV}, idMateriel*, CheminV, NomV)
+  \item[] \textbf{Photo}(\underline{idP}, idMateriel*, CheminP, NomP)
+  \item[] \textbf{PDF}(\underline{idF}, idMateriel*, CheminF, NomF)
+  \item[] \textbf{Progressc}(\underline{idProgress}, idCours*, idUser*, Date\_debut, Date\_fin, Is\_complete, Status)
+  \item[] \textbf{Notification}(\underline{idNotification}, idUser*, Contenu, Est\_lue, Date\_envoie)
+  \item[] \textbf{Message}(\underline{idMessage}, Contenu, Date\_envoie, Est\_lue, idEnvoyeur*, idRecepteur*)
+  \item[] \textbf{Conference}(\underline{idConference}, Type\_meet, Date\_Debut, Heure\_Debut, idFormation*)
+  \item[] \textbf{Presentiel}(\underline{idConference*})
+  \item[] \textbf{En\_Ligne}(\underline{idConference*}, Lien\_meet)
+  \item[] \textbf{Demande\_Conference}(idConference*, idProf*, idAdmin*, Date\_envoie, Status)
+  \item[] \textbf{Inscription}(\underline{idUser*}, \underline{idFormation*})
+  \item[] \textbf{Enseigne}(\underline{idUser*}, \underline{idFormation*})
+\end{itemize}
+
+
+\vspace{0.6cm}
 
 
 \subsection{Définition de design}
